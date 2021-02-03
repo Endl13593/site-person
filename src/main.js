@@ -5,7 +5,7 @@ import router from './router'
 Vue.config.productionTip = false
 
 window.$ = window.jQuery = require('jquery/dist/jquery.min')
-require('bootstrap/dist/js/bootstrap.min')
+require('bootstrap/dist/js/bootstrap.bundle')
 require('@/assets/js/waypoints')
 require('@/assets/js/custom')
 require('@/assets/js/theme')
