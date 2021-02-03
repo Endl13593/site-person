@@ -3,12 +3,12 @@
     <div class="container box_1620">
       <div class="banner_inner">
         <div class="banner_content">
-          <div class="media">
-            <div class="d-flex">
+          <div class="row">
+            <div class="col-12 col-md-6" style="display: flex; justify-content: center">
               <img src="../assets/img/personal.jpg" alt="" width="420" height="650">
             </div>
-            <div class="media-body">
-              <div class="personal_text">
+            <div class="col-12 col-md-6">
+              <div class="personal_text mt-3">
                 <h6>Olá, eu sou o</h6>
                 <h3>Eduardo Nunes</h3>
                 <h4>Desenvolvedor FullStack</h4>
