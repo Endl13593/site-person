@@ -27,7 +27,7 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row" method="post" @submit.prevent="handleSubmit">
+            <form class="row" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
               <input type="hidden" name="form-name" value="contact" />
               <div class="col-md-12">
                 <div class="form-group">
