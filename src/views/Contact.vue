@@ -90,7 +90,7 @@ export default {
                   subject: "",
                   message: ""
             }
-            this.$router.push("Success");
+            this.$router.push("sucesso");
           })
           .catch(() => {
             this.form = {
@@ -99,7 +99,7 @@ export default {
               subject: "",
               message: ""
             }
-            this.$router.push("Failed");
+            this.$router.push("falha");
           });
     }
   }
