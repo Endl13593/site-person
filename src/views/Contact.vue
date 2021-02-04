@@ -72,7 +72,7 @@ export default {
           ...name
         })
         // eslint-disable-next-line no-undef
-      }).then(() => navigate("/thank-you/")).catch(error => alert(error))
+      }).then(() => window.location("/thank-you/")).catch(error => alert(error))
     }
   }
 }
