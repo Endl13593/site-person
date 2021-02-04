@@ -10,15 +10,25 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
   },
   {
-    path: '/about',
+    path: '/sobre',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/contact',
+    path: '/contato',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
-  }
+  },
+  {
+    path: '/sucesso',
+    name: 'Success',
+    component: () => import(/* webpackChunkName: "about" */ '../components/SendEmailSuccess')
+  },
+  {
+    path: '/falha',
+    name: 'Failed',
+    component: () => import(/* webpackChunkName: "about" */ '../components/SendEmailFailed')
+  },
 ]
 
 const router = new VueRouter({

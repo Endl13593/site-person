@@ -27,20 +27,20 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row" id="contact" name="contact" @submit.prevent="handleSubmit" netlify>
+            <form class="row" method="post" @submit.prevent="handleSubmit">
               <input type="hidden" name="form-name" value="contact" />
               <div class="col-md-12">
                 <div class="form-group">
-                  <input type="text" class="form-control" name="name" placeholder="Nome" autocomplete="off">
+                  <input type="text" class="form-control" v-model="form.name" placeholder="Nome" autocomplete="off">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="email" placeholder="E-mail" autocomplete="off">
+                  <input type="text" class="form-control" v-model="form.email" placeholder="E-mail" autocomplete="off">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" placeholder="Assunto" autocomplete="off">
+                  <input type="text" class="form-control" v-model="form.subject" placeholder="Assunto" autocomplete="off">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" autocomplete="off"></textarea>
+                  <textarea class="form-control" v-model="form.message" rows="5" placeholder="Mensagem" autocomplete="off"></textarea>
                 </div>
               </div>
               <div class="col-md-12 text-right">
@@ -55,17 +55,53 @@
 </template>
 <script>
 export default {
+  name: "contact-form",
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      }
+    };
+  },
   methods: {
+    encode(data) {
+      return Object.keys(data)
+          .map(
+              key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          )
+          .join("&");
+    },
     handleSubmit() {
-      let myForm = document.getElementById('contact');
-      let formData = new FormData(myForm)
-      fetch('/', {
-        method: 'POST',
+      fetch("/", {
+        method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-      }).then(() => alert('Form successfully submitted')).catch((error) =>
-          alert(error))
+        body: this.encode({
+          "form-name": "contact",
+          ...this.form
+        })
+      })
+          .then(() => {
+            this.form = {
+                name: "",
+                  email: "",
+                  subject: "",
+                  message: ""
+            }
+            this.$router.push("Success");
+          })
+          .catch(() => {
+            this.form = {
+              name: "",
+              email: "",
+              subject: "",
+              message: ""
+            }
+            this.$router.push("Failed");
+          });
     }
   }
-}
+};
 </script>
