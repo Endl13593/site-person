@@ -10,10 +10,10 @@
         </button>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-          <ul class="nav navbar-nav menu_nav ml-auto">
-            <li class="nav-item"><router-link :to="{ name: 'Home' }" class="nav-link">Início</router-link></li>
-            <li class="nav-item"><router-link :to="{ name: 'About' }" class="nav-link">Sobre</router-link></li>
-            <li class="nav-item"><router-link :to="{ name: 'Contact' }" class="nav-link">Contato</router-link></li>
+          <ul class="nav navbar-nav menu_nav ml-auto text-center">
+            <li class="nav-item item-menu"><router-link :to="{ name: 'Home' }" class="nav-link">INICIO</router-link></li>
+            <li class="nav-item item-menu"><router-link :to="{ name: 'About' }" class="nav-link">SOBRE</router-link></li>
+            <li class="nav-item item-menu"><router-link :to="{ name: 'Contact' }" class="nav-link">CONTATO</router-link></li>
           </ul>
         </div>
       </div>

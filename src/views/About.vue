@@ -9,79 +9,80 @@
         <div class="row welcome_inner">
           <div class="col-lg-12">
             <div class="welcome_text">
-              <h4>Skills</h4>
+              <h3 style="font-weight: bold; margin-top: 10px">Habilidades</h3>
             </div>
+            <hr>
             <div class="tools_expert">
               <div class="skill_main">
-                <div class="skill_item">
-                  <h4>HTML <span class="counter">99</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>HTML</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"><strong>99%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>CSS <span class="counter">90</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>CSS</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 90%" aria-valuenow="90" aria-valuemax="100"><strong>90%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>Javascript <span class="counter">85</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>Javascript</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 85%" aria-valuenow="85" aria-valuemax="100"><strong>85%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>PHP <span class="counter">90</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>PHP</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 90%" aria-valuenow="90" aria-valuemax="100"><strong>90%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>Laravel <span class="counter">85</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>Laravel</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 85%" aria-valuenow="85" aria-valuemax="100"><strong>85%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>Vue JS <span class="counter">85</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>Vue JS</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 85%" aria-valuenow="85" aria-valuemax="100"><strong>85%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>Android <span class="counter">65</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>Android</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 65%" aria-valuenow="65" aria-valuemax="100"><strong>65%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>Docker <span class="counter">60</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>Docker</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 80%" aria-valuenow="80" aria-valuemax="100"><strong>80%</strong></div>
                     </div>
                   </div>
                 </div>
-                <div class="skill_item">
-                  <h4>Git <span class="counter">80</span>%</h4>
+                <div class="skill_item mb-4">
+                  <h5>Git</h5>
                   <div class="progress_br">
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style=" width: 90%" aria-valuenow="90" aria-valuemax="100"><strong>90%</strong></div>
                     </div>
                   </div>
                 </div>
