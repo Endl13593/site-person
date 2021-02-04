@@ -27,7 +27,7 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row" method="post" name="contact" data-netlify="true">
+            <form class="row" action="/success" method="post" name="contact" data-netlify="true">
               <div class="col-md-12">
                 <div class="form-group">
                   <input type="text" class="form-control" name="name" placeholder="Nome" autocomplete="off">
