@@ -27,8 +27,7 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row" data-netlify="true" name="formContact" method="post" @submit="handleSubmit">
-              <input type="hidden" name="form-name" value="formContact" />
+            <form class="row" name="formContact" method="post" netlify>
               <div class="col-md-12">
                 <div class="form-group">
                   <input type="text" class="form-control" name="name" placeholder="Nome" autocomplete="off">
@@ -53,27 +52,3 @@
     </section>
   </div>
 </template>
-<script>
-export default {
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-          .join("&")
-    },
-    handleSubmit(event) {
-      event.preventDefault()
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        // eslint-disable-next-line no-undef
-        body: this.encode({
-          "form-name": event.target.getAttribute("name"),
-          ...name
-        })
-        // eslint-disable-next-line no-undef
-      }).then(() => window.location("/thank-you/")).catch(error => alert(error))
-    }
-  }
-}
-</script>
