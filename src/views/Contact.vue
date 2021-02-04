@@ -27,8 +27,8 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row" id="formOrder" data-netlify="true" name="formContact" method="post" @submit.prevent="handleSubmit">
-              <input type="hidden" name="form-name" value="formContact" />
+            <form class="row" id="contact" name="contact" @submit.prevent="handleSubmit" netlify>
+              <input type="hidden" name="form-name" value="contact" />
               <div class="col-md-12">
                 <div class="form-group">
                   <input type="text" class="form-control" name="name" placeholder="Nome" autocomplete="off">
@@ -57,7 +57,7 @@
 export default {
   methods: {
     handleSubmit() {
-      let myForm = document.getElementById('formOrder');
+      let myForm = document.getElementById('contact');
       let formData = new FormData(myForm)
       fetch('/', {
         method: 'POST',
