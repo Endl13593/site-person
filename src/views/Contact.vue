@@ -27,7 +27,8 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row" name="formContact" method="post" netlify>
+            <form class="row" id="formOrder" data-netlify="true" name="formContact" method="post" @submit.prevent="handleSubmit">
+              <input type="hidden" name="form-name" value="formContact" />
               <div class="col-md-12">
                 <div class="form-group">
                   <input type="text" class="form-control" name="name" placeholder="Nome" autocomplete="off">
@@ -52,3 +53,19 @@
     </section>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    handleSubmit() {
+      let myForm = document.getElementById('formOrder');
+      let formData = new FormData(myForm)
+      fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      }).then(() => alert('Form successfully submitted')).catch((error) =>
+          alert(error))
+    }
+  }
+}
+</script>
