@@ -1,8 +1,7 @@
 <template>
   <header class="header_area">
-  <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light" style="background: #347dbe">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <router-link :to="{ name: 'Home' }" class="navbar-brand" style="color: white"><strong>EDUARDO NUNES</strong></router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,13 +11,12 @@
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
           <ul class="nav navbar-nav menu_nav ml-auto text-center">
             <li class="nav-item item-menu"><router-link :to="{ name: 'Home' }" class="nav-link">INICIO</router-link></li>
-            <li class="nav-item item-menu"><router-link :to="{ name: 'About' }" class="nav-link">SOBRE</router-link></li>
+            <li class="nav-item item-menu"><router-link :to="{ name: 'About' }" class="nav-link">RESUMO</router-link></li>
             <li class="nav-item item-menu"><router-link :to="{ name: 'Contact' }" class="nav-link">CONTATO</router-link></li>
           </ul>
         </div>
       </div>
     </nav>
-  </div>
   </header>
 </template>
 

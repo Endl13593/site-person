@@ -1,107 +1,112 @@
 <template>
-  <div class="contact">
-    <section class="banner_area">
-
-    </section>
-    <!--================End Home Banner Area =================-->
-
-    <!--================Contact Area =================-->
-    <section class="contact_area p_120">
+  <div>
       <div class="container">
         <div class="welcome_text">
-          <h4>Contato</h4>
+          <h3 style="font-weight: bold; margin-top: 10px">Contato</h3>
         </div>
+        <hr>
         <div class="row">
-          <div class="col-lg-3">
-            <div class="contact_info">
-              <div class="info_item">
-                <i class="fa fa-phone"></i>
-                <h6>(92) 99537-5239</h6>
-                <p>Entre em contato a qualquer momento</p>
-              </div>
-              <div class="info_item">
-                <i class="fa fa-envelope"></i>
-                <h6>nunes.eduardo1993@gmail.com</h6>
-                <p>Envie sua mensagem a qualquer momento</p>
+          <div class="col-12 col-md-6 col-sm-6">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4 card-icon-contact">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="col-md-8 card-text-contact">
+                  <div class="card-body card-text-contact">
+                    <h5>(92) 99537-5239</h5>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-9">
-            <form class="row" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
-              <input type="hidden" name="form-name" value="contact" />
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input type="text" class="form-control" v-model="form.name" placeholder="Nome" autocomplete="off">
+
+          <div class="col-12 col-md-6 col-sm-6">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-4 card-icon-contact">
+                  <i class="fa fa-envelope"></i>
                 </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" v-model="form.email" placeholder="E-mail" autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" v-model="form.subject" placeholder="Assunto" autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" v-model="form.message" rows="5" placeholder="Mensagem" autocomplete="off"></textarea>
+                <div class="col-md-8 card-text-contact">
+                  <div class="card-body card-text-contact">
+                    <h5>nunes.eduardo1993@gmail.com</h5>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn submit_btn">Enviar mensagem</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-sm-6">
+            <div class="card mb-3 card-link">
+              <a href="https://github.com/Endl13593">
+              <div class="row no-gutters">
+                <div class="col-md-4 card-icon-contact">
+                  <i class="fa fa-github"></i>
+                </div>
+                <div class="col-md-8 card-text-contact">
+                  <div class="card-body card-text-contact">
+                    <h5>Endl13593</h5>
+                  </div>
+                </div>
               </div>
-            </form>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-sm-6">
+            <div class="card mb-3 card-link">
+              <a href="https://www.linkedin.com/in/eduardo-nunes-0b541915b">
+              <div class="row no-gutters">
+                <div class="col-md-4 card-icon-contact">
+                  <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="col-md-8 card-text-contact">
+                  <div class="card-body card-text-contact">
+                    <h5>eduardo-nunes-0b541915b</h5>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-sm-6">
+            <div class="card mb-3 card-link">
+              <a href="https://www.facebook.com/eduardo.nunes.7165331">
+              <div class="row no-gutters">
+                <div class="col-md-4 card-icon-contact">
+                  <i class="fa fa-facebook-official"></i>
+                </div>
+                <div class="col-md-8 card-text-contact">
+                  <div class="card-body card-text-contact">
+                    <h5>eduardo.nunes.7165331</h5>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-sm-6">
+            <div class="card mb-3 card-link">
+              <a href="https://www.instagram.com/enunes_lima/?hl=pt-br">
+              <div class="row no-gutters">
+                <div class="col-md-4 card-icon-contact">
+                  <i class="fa fa-instagram"></i>
+                </div>
+                <div class="col-md-8 card-text-contact">
+                  <div class="card-body card-text-contact">
+                    <h5>@enunes_lima</h5>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
   </div>
 </template>
-<script>
-export default {
-  name: "contact-form",
-  data() {
-    return {
-      form: {
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
-      }
-    };
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-          .map(
-              key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-          )
-          .join("&");
-    },
-    handleSubmit() {
-      fetch('/', {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": "contact",
-          ...this.form
-        })
-      })
-          .then(() => {
-            this.form = {
-                name: "",
-                  email: "",
-                  subject: "",
-                  message: ""
-            }
-            this.$router.push("sucesso");
-          })
-          .catch(() => {
-            this.form = {
-              name: "",
-              email: "",
-              subject: "",
-              message: ""
-            }
-            this.$router.push("falha");
-          });
-    }
-  }
-};
-</script>

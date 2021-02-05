@@ -22,7 +22,7 @@
               </div>
               <div class="area-description-social">
                 <ul>
-                  <li><a href="https://www.facebook.com/eduardo.nunes.7165331" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.facebook.com/eduardo.nunes.7165331" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
                   <li><a href="https://www.instagram.com/enunes_lima/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a></li>
                   <li><a href="https://github.com/Endl13593" target="_blank"><i class="fa fa-github"></i></a></li>
                   <li><a href="https://www.linkedin.com/in/eduardo-nunes-0b541915b" target="_blank"><i class="fa fa-linkedin"></i></a></li>
