@@ -7,6 +7,7 @@ Vue.config.productionTip = false
 window.$ = window.jQuery = require('jquery/dist/jquery.min')
 require('bootstrap/dist/js/bootstrap.bundle')
 
+import '@/assets/css/tailwind.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import '@/assets/css/style.css'
