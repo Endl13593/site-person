@@ -1,0 +1,10 @@
+# robots.txt para eduardonunesdelima.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://eduardonunesdelima.dev/sitemap.xml
+
+# Disallow admin or private pages (adicione conforme necessário)
+# Disallow: /admin/

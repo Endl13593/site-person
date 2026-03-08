@@ -3,20 +3,18 @@
     <header :class="['fixed w-full top-0 z-50 transition-all duration-500', scrolled ? 'bg-white shadow-2xl' : 'bg-primary-darker shadow-lg']">
       <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16 md:h-20">
-          <!-- Logo with Animation -->
           <router-link to="/" class="relative group">
             <span :class="['text-xl md:text-2xl font-bold tracking-wide transition-all duration-300', scrolled ? 'text-gray-900' : 'text-white']">
               <span class="relative">
                 EDUARDO 
                 <span class="relative ml-2">
-                  <span :class="scrolled ? 'bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent' : 'text-white'">NUNES</span>
+                  <span :class="scrolled ? 'bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent' : 'text-white'">NUNES</span>
                 </span>
-                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-purple-600 group-hover:w-full transition-all duration-300"></span>
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-blue-600 group-hover:w-full transition-all duration-300"></span>
               </span>
             </span>
           </router-link>
           
-          <!-- Hamburger Menu Button -->
           <button 
             @click="mobileMenuOpen = !mobileMenuOpen" 
             :class="['md:hidden relative w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300', scrolled ? 'text-gray-900 hover:bg-gray-100' : 'text-white hover:bg-white/10']">
@@ -26,34 +24,33 @@
               <span :class="['absolute h-0.5 w-full bg-current transform transition-all duration-300', mobileMenuOpen ? '-rotate-45 top-2' : 'top-4']"></span>
             </div>
           </button>
-          
-          <!-- Desktop Menu -->
+        
           <ul class="hidden md:flex items-center space-x-2">
             <li>
               <a href="#" 
                  :class="['relative no-underline px-4 py-2 font-semibold transition-all duration-300 rounded-lg group', scrolled ? 'text-gray-700 hover:text-primary hover:bg-primary/5' : 'text-white hover:bg-white/10']"
                  @click.prevent="scrollToTop">
                 <span class="relative z-10">HOME</span>
-                <span :class="['absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-purple-600 group-hover:w-3/4 transition-all duration-300', scrolled ? '' : 'bg-white']"></span>
+                <span :class="['absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-blue-600 group-hover:w-3/4 transition-all duration-300', scrolled ? '' : 'bg-white']"></span>
               </a>
             </li>
             <li>
               <a href="#resumo" 
                  :class="['relative no-underline px-4 py-2 font-semibold transition-all duration-300 rounded-lg group', scrolled ? 'text-gray-700 hover:text-primary hover:bg-primary/5' : 'text-white hover:bg-white/10']">
                 <span class="relative z-10">RESUMO</span>
-                <span :class="['absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-purple-600 group-hover:w-3/4 transition-all duration-300', scrolled ? '' : 'bg-white']"></span>
+                <span :class="['absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-blue-600 group-hover:w-3/4 transition-all duration-300', scrolled ? '' : 'bg-white']"></span>
               </a>
             </li>
             <li>
               <a href="#contato" 
                  :class="['relative no-underline px-4 py-2 font-semibold transition-all duration-300 rounded-lg group', scrolled ? 'text-gray-700 hover:text-primary hover:bg-primary/5' : 'text-white hover:bg-white/10']">
                 <span class="relative z-10">CONTATO</span>
-                <span :class="['absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-purple-600 group-hover:w-3/4 transition-all duration-300', scrolled ? '' : 'bg-white']"></span>
+                <span :class="['absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-blue-600 group-hover:w-3/4 transition-all duration-300', scrolled ? '' : 'bg-white']"></span>
               </a>
             </li>
             <li class="ml-2">
               <a href="#contato" 
-                 class="no-underline inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group">
+                 class="no-underline inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group">
                 <span>FALE COMIGO</span>
                 <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
               </a>
@@ -61,7 +58,6 @@
           </ul>
         </div>
         
-        <!-- Mobile Menu -->
         <div 
           :class="['md:hidden overflow-hidden transition-all duration-500 ease-in-out', mobileMenuOpen ? 'max-h-96 opacity-100 pb-4' : 'max-h-0 opacity-0']">
           <ul class="flex flex-col space-y-1 pt-4">
@@ -92,7 +88,7 @@
             <li class="pt-2">
               <a href="#contato" 
                  @click="mobileMenuOpen = false"
-                 class="no-underline block px-4 py-3 bg-gradient-to-r from-primary to-purple-600 text-white font-semibold rounded-lg shadow-lg text-center group">
+                 class="no-underline block px-4 py-3 bg-gradient-to-r from-primary to-blue-600 text-white font-semibold rounded-lg shadow-lg text-center group">
                 <i class="fa fa-paper-plane mr-2"></i>
                 FALE COMIGO
               </a>
@@ -102,18 +98,15 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
-      <!-- Animated Background -->
-      <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-100 to-purple-50">
+      <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100">
         <div class="absolute inset-0 opacity-30">
           <div class="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div class="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-          <div class="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+          <div class="absolute top-40 right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div class="absolute -bottom-8 left-1/2 w-72 h-72 bg-gray-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
         </div>
       </div>
 
-      <!-- Floating Particles -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div v-for="i in 20" :key="i" 
              class="absolute w-2 h-2 bg-primary/20 rounded-full animate-float"
@@ -122,46 +115,37 @@
 
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <!-- Image Section with Advanced Effects -->
           <div class="flex justify-center order-1 lg:order-1" data-aos="fade-right">
             <div class="relative group">
-              <!-- Glow Effect -->
-              <div class="absolute -inset-1 bg-gradient-to-r from-primary via-purple-500 to-pink-500 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
+              <div class="absolute -inset-1 bg-gradient-to-r from-primary via-blue-500 to-gray-500 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
               
-              <!-- Image Container -->
               <div class="relative rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500 w-full max-w-md mx-auto bg-white">
                 <img :src="personalImage" alt="Eduardo Nunes" class="w-full h-auto object-cover" style="max-height: 550px;">
               </div>
               
-              <!-- Floating Elements -->
               <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
-              <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-400/20 rounded-full blur-2xl animate-pulse animation-delay-1000"></div>
+              <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400/20 rounded-full blur-2xl animate-pulse animation-delay-1000"></div>
             </div>
           </div>
         
-          <!-- Content Section with Enhanced Design -->
           <div class="order-2 lg:order-2" data-aos="fade-left">
             <div class="relative">
-              <!-- Decorative Element -->
-              <div class="absolute -left-4 top-0 w-1 h-20 bg-gradient-to-b from-primary to-purple-500 rounded-full"></div>
+              <div class="absolute -left-4 top-0 w-1 h-20 bg-gradient-to-b from-primary to-blue-600 rounded-full"></div>
               
               <div class="bg-white/80 backdrop-blur-xl rounded-2xl shadow-2xl p-8 md:p-10 transform hover:shadow-3xl transition-all duration-500 border border-white/20">
-                <!-- Animated Badge -->
                 <div class="inline-block mb-4">
-                  <span class="relative px-4 py-2 bg-gradient-to-r from-primary to-purple-600 text-white font-semibold text-xs md:text-sm rounded-full uppercase tracking-wider shadow-lg">
+                  <span class="relative px-4 py-2 bg-gradient-to-r from-primary to-blue-600 text-white font-semibold text-xs md:text-sm rounded-full uppercase tracking-wider shadow-lg">
                     <span class="relative z-10">Olá, eu sou o</span>
                     <span class="absolute inset-0 bg-white/20 rounded-full blur animate-pulse"></span>
                   </span>
                 </div>
                 
-                <!-- Name with Gradient -->
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 bg-gradient-to-r from-gray-900 via-primary to-purple-600 bg-clip-text text-transparent animate-gradient-text">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 bg-gradient-to-r from-gray-900 via-primary to-blue-600 bg-clip-text text-transparent animate-gradient-text">
                   Eduardo Nunes
                 </h1>
                 
-                <!-- Typing Effect Title -->
                 <div class="mb-6 h-12 flex items-center">
-                  <h2 class="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+                  <h2 class="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                     {{ typedRole }}<span class="animate-blink">|</span>
                   </h2>
                 </div>
@@ -171,48 +155,45 @@
                   empreguei todo meu tempo e dedicação em aprender novas tecnologias. E atualmente sou Desenvolvedor Web
                 </p>
                 
-                <!-- Stats Cards -->
                 <div class="grid grid-cols-3 gap-4 mb-8">
-                  <div class="text-center p-4 bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-xl hover:scale-105 transition-transform duration-300">
+                  <div class="text-center p-4 bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-xl hover:scale-105 transition-transform duration-300">
                     <div class="text-2xl md:text-3xl font-bold text-primary">6+</div>
                     <div class="text-xs md:text-sm text-gray-600">Anos</div>
                   </div>
-                  <div class="text-center p-4 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl hover:scale-105 transition-transform duration-300">
-                    <div class="text-2xl md:text-3xl font-bold text-purple-600">50+</div>
+                  <div class="text-center p-4 bg-gradient-to-br from-blue-500/10 to-gray-400/10 rounded-xl hover:scale-105 transition-transform duration-300">
+                    <div class="text-2xl md:text-3xl font-bold text-blue-600">50+</div>
                     <div class="text-xs md:text-sm text-gray-600">Projetos</div>
                   </div>
-                  <div class="text-center p-4 bg-gradient-to-br from-pink-500/10 to-primary/10 rounded-xl hover:scale-105 transition-transform duration-300">
-                    <div class="text-2xl md:text-3xl font-bold text-pink-600">10+</div>
+                  <div class="text-center p-4 bg-gradient-to-br from-gray-500/10 to-primary/10 rounded-xl hover:scale-105 transition-transform duration-300">
+                    <div class="text-2xl md:text-3xl font-bold text-gray-600">10+</div>
                     <div class="text-xs md:text-sm text-gray-600">Tecnologias</div>
                   </div>
                 </div>
                 
-                <!-- Contact Info with Icons -->
                 <div class="space-y-3 mb-8">
                   <a href="tel:+5592995375239" class="flex items-center group no-underline">
-                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <i class="fa fa-phone text-white"></i>
                     </div>
                     <span class="ml-3 text-gray-700 group-hover:text-primary transition-colors text-sm md:text-base">(92) 999537-5239</span>
                   </a>
                   <a href="mailto:nunes.eduardo1993@gmail.com" class="flex items-center group no-underline">
-                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-gray-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <i class="fa fa-envelope text-white"></i>
                     </div>
-                    <span class="ml-3 text-gray-700 group-hover:text-purple-600 transition-colors text-sm md:text-base">nunes.eduardo1993@gmail.com</span>
+                    <span class="ml-3 text-gray-700 group-hover:text-blue-600 transition-colors text-sm md:text-base">nunes.eduardo1993@gmail.com</span>
                   </a>
                   <div class="flex items-center group">
-                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-600 to-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gray-600 to-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <i class="fa fa-map-marker text-white"></i>
                     </div>
-                    <span class="ml-3 text-gray-700 group-hover:text-pink-600 transition-colors text-sm md:text-base">Manaus-AM</span>
+                    <span class="ml-3 text-gray-700 group-hover:text-gray-600 transition-colors text-sm md:text-base">Manaus-AM</span>
                   </div>
                 </div>
                 
-                <!-- Social Links with Enhanced Design -->
                 <div class="flex space-x-3">
                   <a href="https://www.instagram.com/enunes.lima/?hl=pt-br" target="_blank"
-                     class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500 to-purple-600 text-white flex items-center justify-center shadow-lg overflow-hidden">
+                     class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center shadow-lg overflow-hidden">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     <i class="fa fa-instagram text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300"></i>
                   </a>
@@ -227,7 +208,7 @@
                     <i class="fa fa-linkedin text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300"></i>
                   </a>
                   <a href="#contato" 
-                     class="no-underline relative group flex-1 px-6 rounded-xl bg-gradient-to-r from-primary to-purple-600 text-white flex items-center justify-center shadow-lg overflow-hidden font-semibold hover:shadow-2xl transition-all duration-300">
+                     class="no-underline relative group flex-1 px-6 rounded-xl bg-gradient-to-r from-primary to-blue-600 text-white flex items-center justify-center shadow-lg overflow-hidden font-semibold hover:shadow-2xl transition-all duration-300">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     <span class="relative z-10">Entre em Contato</span>
                     <i class="fa fa-arrow-right ml-2 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300"></i>
@@ -400,6 +381,7 @@ export default {
       typedRole: '',
       fullRole: 'Engenheiro de Software',
       typeIndex: 0,
+      scrolled: false,
       skills: [
         { name: 'HTML', level: 99 },
         { name: 'CSS', level: 99 },
@@ -423,7 +405,6 @@ export default {
         button.style.display = "none"
       }
       
-      // Update navbar style on scroll
       this.scrolled = document.documentElement.scrollTop > 50;
     },
     backToTop() {
@@ -462,7 +443,6 @@ export default {
       })
     })
 
-    // Start typing animation
     setTimeout(() => {
       this.typeRole();
     }, 500);
