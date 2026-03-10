@@ -247,26 +247,32 @@
         </div>
 
         <div class="bg-gradient-to-r from-primary to-primary-dark rounded-2xl shadow-2xl overflow-hidden">
-          <div class="flex border-b border-white/20">
-            <button @click="activeTab = 'experience'" 
+          <div role="tablist" class="flex border-b border-white/20">
+            <button id="experience-tab"
+                    @click="activeTab = 'experience'" 
                     :class="activeTab === 'experience' ? 'bg-white/20 text-white' : 'text-white/85 hover:text-white'"
                     class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
                     role="tab"
-                    :aria-selected="activeTab === 'experience'"
+                    :aria-selected="String(activeTab === 'experience')"
                     aria-controls="experience-panel">
               Experiência
             </button>
-            <button @click="activeTab = 'education'"
+            <button id="education-tab"
+                    @click="activeTab = 'education'"
                     :class="activeTab === 'education' ? 'bg-white/20 text-white' : 'text-white/85 hover:text-white'"
                     class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
                     role="tab"
-                    :aria-selected="activeTab === 'education'"
+                    :aria-selected="String(activeTab === 'education')"
                     aria-controls="education-panel">
               Formação Acadêmica
             </button>
           </div>
           
-          <div v-show="activeTab === 'experience'" class="p-8 md:p-12">
+          <div v-show="activeTab === 'experience'" 
+               id="experience-panel"
+               role="tabpanel"
+               aria-labelledby="experience-tab"
+               class="p-8 md:p-12">
             <div class="relative pl-8 border-l-4 border-white/30">
               <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white"></div>
               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
@@ -286,7 +292,11 @@
             </div>
           </div>
           
-          <div v-show="activeTab === 'education'" class="p-8 md:p-12">
+          <div v-show="activeTab === 'education'" 
+               id="education-panel"
+               role="tabpanel"
+               aria-labelledby="education-tab"
+               class="p-8 md:p-12">
             <div class="space-y-8">
               <div class="relative pl-8 border-l-4 border-white/30">
                 <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white"></div>
