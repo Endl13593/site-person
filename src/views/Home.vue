@@ -122,7 +122,7 @@
               <div class="absolute -inset-1 bg-gradient-to-r from-primary via-blue-500 to-gray-500 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
               
               <div class="relative rounded-2xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500 w-full max-w-md mx-auto bg-white">
-                <img :src="personalImage" alt="Eduardo Nunes" class="w-full h-auto object-cover" style="max-height: 550px;">
+                <img :src="personalImage" alt="Eduardo Nunes" class="w-full h-auto object-cover" style="max-height: 550px;" fetchpriority="high">
               </div>
               
               <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
@@ -160,15 +160,15 @@
                 <div class="grid grid-cols-3 gap-4 mb-8">
                   <div class="text-center p-4 bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-xl hover:scale-105 transition-transform duration-300">
                     <div class="text-2xl md:text-3xl font-bold text-primary">6+</div>
-                    <div class="text-xs md:text-sm text-gray-600">Anos</div>
+                    <div class="text-xs md:text-sm text-gray-700">Anos</div>
                   </div>
                   <div class="text-center p-4 bg-gradient-to-br from-blue-500/10 to-gray-400/10 rounded-xl hover:scale-105 transition-transform duration-300">
                     <div class="text-2xl md:text-3xl font-bold text-blue-600">50+</div>
-                    <div class="text-xs md:text-sm text-gray-600">Projetos</div>
+                    <div class="text-xs md:text-sm text-gray-700">Projetos</div>
                   </div>
                   <div class="text-center p-4 bg-gradient-to-br from-gray-500/10 to-primary/10 rounded-xl hover:scale-105 transition-transform duration-300">
-                    <div class="text-2xl md:text-3xl font-bold text-gray-600">10+</div>
-                    <div class="text-xs md:text-sm text-gray-600">Tecnologias</div>
+                    <div class="text-2xl md:text-3xl font-bold text-gray-700">10+</div>
+                    <div class="text-xs md:text-sm text-gray-700">Tecnologias</div>
                   </div>
                 </div>
                 
@@ -249,7 +249,7 @@
         <div class="bg-gradient-to-r from-primary to-primary-dark rounded-2xl shadow-2xl overflow-hidden">
           <div class="flex border-b border-white/20">
             <button @click="activeTab = 'experience'" 
-                    :class="activeTab === 'experience' ? 'bg-white/20 text-white' : 'text-white/70 hover:text-white'"
+                    :class="activeTab === 'experience' ? 'bg-white/20 text-white' : 'text-white/85 hover:text-white'"
                     class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
                     role="tab"
                     :aria-selected="activeTab === 'experience'"
@@ -257,7 +257,7 @@
               Experiência
             </button>
             <button @click="activeTab = 'education'"
-                    :class="activeTab === 'education' ? 'bg-white/20 text-white' : 'text-white/70 hover:text-white'"
+                    :class="activeTab === 'education' ? 'bg-white/20 text-white' : 'text-white/85 hover:text-white'"
                     class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
                     role="tab"
                     :aria-selected="activeTab === 'education'"
