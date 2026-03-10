@@ -16,7 +16,9 @@
           </router-link>
           
           <button 
-            @click="mobileMenuOpen = !mobileMenuOpen" 
+            @click="mobileMenuOpen = !mobileMenuOpen"
+            :aria-label="mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'"
+            :aria-expanded="mobileMenuOpen"
             :class="['md:hidden relative w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300', scrolled ? 'text-gray-900 hover:bg-gray-100' : 'text-white hover:bg-white/10']">
             <div class="relative w-6 h-5 flex flex-col justify-between">
               <span :class="['absolute h-0.5 w-full bg-current transform transition-all duration-300', mobileMenuOpen ? 'rotate-45 top-2' : 'top-0']"></span>
@@ -52,7 +54,7 @@
               <a href="#contato" 
                  class="no-underline inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group">
                 <span>FALE COMIGO</span>
-                <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -193,19 +195,22 @@
                 
                 <div class="flex space-x-3">
                   <a href="https://www.instagram.com/enunes.lima/?hl=pt-br" target="_blank"
+                     aria-label="Perfil do Instagram de Eduardo Nunes"
                      class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center shadow-lg overflow-hidden">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                    <i class="fa fa-instagram text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <i class="fa fa-instagram text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
                   </a>
                   <a href="https://github.com/Endl13593" target="_blank"
+                     aria-label="Perfil do GitHub de Eduardo Nunes"
                      class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-gray-700 to-gray-900 text-white flex items-center justify-center shadow-lg overflow-hidden">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                    <i class="fa fa-github text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <i class="fa fa-github text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/eduardo-nunes-0b541915b" target="_blank"
+                     aria-label="Perfil do LinkedIn de Eduardo Nunes"
                      class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-dark text-white flex items-center justify-center shadow-lg overflow-hidden">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                    <i class="fa fa-linkedin text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300"></i>
+                    <i class="fa fa-linkedin text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
                   </a>
                   <a href="#contato" 
                      class="no-underline relative group flex-1 px-6 rounded-xl bg-gradient-to-r from-primary to-blue-600 text-white flex items-center justify-center shadow-lg overflow-hidden font-semibold hover:shadow-2xl transition-all duration-300">
@@ -245,12 +250,18 @@
           <div class="flex border-b border-white/20">
             <button @click="activeTab = 'experience'" 
                     :class="activeTab === 'experience' ? 'bg-white/20 text-white' : 'text-white/70 hover:text-white'"
-                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300">
+                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
+                    role="tab"
+                    :aria-selected="activeTab === 'experience'"
+                    aria-controls="experience-panel">
               Experiência
             </button>
             <button @click="activeTab = 'education'"
                     :class="activeTab === 'education' ? 'bg-white/20 text-white' : 'text-white/70 hover:text-white'"
-                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300">
+                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
+                    role="tab"
+                    :aria-selected="activeTab === 'education'"
+                    aria-controls="education-panel">
               Formação Acadêmica
             </button>
           </div>
@@ -309,50 +320,55 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <a href="https://api.whatsapp.com/send?phone=5592995375239" target="_blank"
+             aria-label="Enviar mensagem no WhatsApp para (92) 9 9537-5239"
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-whatsapp text-white text-3xl"></i>
+                <i class="fa fa-whatsapp text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">(92) 9 9537-5239</h3>
             </div>
           </a>
 
           <a href="mailto:nunes.eduardo1993@gmail.com" target="_blank"
+             aria-label="Enviar e-mail para nunes.eduardo1993@gmail.com"
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-envelope text-white text-3xl"></i>
+                <i class="fa fa-envelope text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">nunes.eduardo1993@gmail.com</h3>
             </div>
           </a>
           
           <a href="https://github.com/Endl13593" target="_blank"
+             aria-label="Visitar perfil no GitHub: Endl13593"
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-github text-white text-3xl"></i>
+                <i class="fa fa-github text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">Endl13593</h3>
             </div>
           </a>
 
           <a href="https://www.linkedin.com/in/eduardo-nunes-0b541915b" target="_blank"
+             aria-label="Visitar perfil no LinkedIn: eduardo-nunes-0b541915b"
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-linkedin text-white text-3xl"></i>
+                <i class="fa fa-linkedin text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">eduardo-nunes-0b541915b</h3>
             </div>
           </a>
           
           <a href="https://www.instagram.com/enunes.lima/?hl=pt-br" target="_blank"
+             aria-label="Visitar perfil no Instagram: @enunes.lima"
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-instagram text-white text-3xl"></i>
+                <i class="fa fa-instagram text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">@enunes.lima</h3>
             </div>
@@ -363,6 +379,7 @@
 
     <button @click.prevent="backToTop" 
             id="btnTop"
+            aria-label="Voltar ao topo"
             class="fixed bottom-8 right-8 w-14 h-14 bg-primary hover:bg-primary-dark text-white rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 z-40 flex items-center justify-center">
       <i class="fa fa-arrow-circle-up text-2xl"></i>
     </button>
