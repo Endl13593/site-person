@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.28.6",
     "@prerenderer/rollup-plugin": "^0.3.12",
+    "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/postcss": "^4.2.1",
     "@vue/cli-plugin-babel": "^5.0.9",
     "@vue/cli-plugin-eslint": "^5.0.9",
@@ -27,6 +28,7 @@
     "esbuild": "^0.27.3",
     "eslint": "^8.57.1",
     "eslint-plugin-vue": "^9.33.0",
+    "lightningcss": "^1.32.0",
     "postcss": "^8.5.8",
     "puppeteer": "^24.38.0",
     "sass": "^1.97.3",
