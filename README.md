@@ -2,16 +2,17 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/your-site/deploys)
 
-Site pessoal e portfólio profissional desenvolvido com Vue.js 2, apresentando projetos, habilidades e informações de contato.
+Site pessoal e portfólio profissional desenvolvido com Vue.js 3, apresentando projetos, habilidades e informações de contato.
 
 🌐 **Site ao vivo**: [eduardonunesdelima.dev](https://eduardonunesdelima.dev)
 
 ## 🚀 Tecnologias
 
-- **Vue.js 2.6** - Framework JavaScript progressivo
-- **Vue Router** - Roteamento SPA
-- **Tailwind CSS** - Framework CSS utility-first
-- **Font Awesome** - Ícones
+- **Vue.js 3.5** - Framework JavaScript progressivo
+- **Vue Router 4** - Roteamento SPA
+- **Vue CLI 5** - Ferramentas de build e desenvolvimento  
+- **Tailwind CSS 4** - Framework CSS utility-first
+- **Font Awesome 6** - Ícones
 - **Prerender SPA Plugin** - SEO e performance
 - **Netlify** - Hospedagem e deploy contínuo
 
@@ -112,20 +113,6 @@ npm run build
 ## 📝 Build Notes
 
 Consulte [BUILD.md](./BUILD.md) para informações sobre o processo de build e otimizações.
-
-## 🤝 Contribuindo
-
-Este é um projeto pessoal, mas sugestões são bem-vindas:
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto é de código aberto para fins educacionais e de portfólio.
 
 ## 👤 Autor
 
