@@ -54,7 +54,7 @@
               <a href="#contato" 
                  class="no-underline inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-primary to-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group">
                 <span>FALE COMIGO</span>
-                <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
+                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -67,7 +67,7 @@
               <a href="#" 
                  @click.prevent="scrollToTop(); mobileMenuOpen = false" 
                  :class="['no-underline block px-4 py-3 font-semibold transition-all duration-300 rounded-lg', scrolled ? 'text-gray-700 hover:bg-primary/5 hover:text-primary' : 'text-white hover:bg-white/10']">
-                <i class="fa fa-home w-6"></i>
+                <i class="fas fa-home w-6"></i>
                 HOME
               </a>
             </li>
@@ -75,7 +75,7 @@
               <a href="#resumo" 
                  @click="mobileMenuOpen = false" 
                  :class="['no-underline block px-4 py-3 font-semibold transition-all duration-300 rounded-lg', scrolled ? 'text-gray-700 hover:bg-primary/5 hover:text-primary' : 'text-white hover:bg-white/10']">
-                <i class="fa fa-file-text w-6"></i>
+                <i class="fas fa-file-text w-6"></i>
                 RESUMO
               </a>
             </li>
@@ -83,7 +83,7 @@
               <a href="#contato" 
                  @click="mobileMenuOpen = false" 
                  :class="['no-underline block px-4 py-3 font-semibold transition-all duration-300 rounded-lg', scrolled ? 'text-gray-700 hover:bg-primary/5 hover:text-primary' : 'text-white hover:bg-white/10']">
-                <i class="fa fa-envelope w-6"></i>
+                <i class="fas fa-envelope w-6"></i>
                 CONTATO
               </a>
             </li>
@@ -91,7 +91,7 @@
               <a href="#contato" 
                  @click="mobileMenuOpen = false"
                  class="no-underline block px-4 py-3 bg-gradient-to-r from-primary to-blue-600 text-white font-semibold rounded-lg shadow-lg text-center group">
-                <i class="fa fa-paper-plane mr-2"></i>
+                <i class="fas fa-paper-plane mr-2"></i>
                 FALE COMIGO
               </a>
             </li>
@@ -163,7 +163,7 @@
                     <div class="text-xs md:text-sm text-gray-700">Anos</div>
                   </div>
                   <div class="text-center p-4 bg-gradient-to-br from-blue-500/10 to-gray-400/10 rounded-xl hover:scale-105 transition-transform duration-300">
-                    <div class="text-2xl md:text-3xl font-bold text-blue-600">50+</div>
+                    <div class="text-2xl md:text-3xl font-bold text-blue-600">20+</div>
                     <div class="text-xs md:text-sm text-gray-700">Projetos</div>
                   </div>
                   <div class="text-center p-4 bg-gradient-to-br from-gray-500/10 to-primary/10 rounded-xl hover:scale-105 transition-transform duration-300">
@@ -175,19 +175,19 @@
                 <div class="space-y-3 mb-8">
                   <a href="tel:+5592995375239" class="flex items-center group no-underline">
                     <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <i class="fa fa-phone text-white"></i>
+                      <i class="fas fa-phone text-white"></i>
                     </div>
                     <span class="ml-3 text-gray-700 group-hover:text-primary transition-colors text-sm md:text-base">(92) 999537-5239</span>
                   </a>
                   <a href="mailto:nunes.eduardo1993@gmail.com" class="flex items-center group no-underline">
                     <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-gray-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <i class="fa fa-envelope text-white"></i>
+                      <i class="fas fa-envelope text-white"></i>
                     </div>
                     <span class="ml-3 text-gray-700 group-hover:text-blue-600 transition-colors text-sm md:text-base">nunes.eduardo1993@gmail.com</span>
                   </a>
                   <div class="flex items-center group">
                     <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gray-600 to-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <i class="fa fa-map-marker text-white"></i>
+                      <i class="fas fa-location-dot text-white"></i>
                     </div>
                     <span class="ml-3 text-gray-700 group-hover:text-gray-600 transition-colors text-sm md:text-base">Manaus-AM</span>
                   </div>
@@ -198,25 +198,25 @@
                      aria-label="Perfil do Instagram de Eduardo Nunes"
                      class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center shadow-lg overflow-hidden">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                    <i class="fa fa-instagram text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
+                    <i class="fab fa-instagram text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
                   </a>
                   <a href="https://github.com/Endl13593" target="_blank"
                      aria-label="Perfil do GitHub de Eduardo Nunes"
                      class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-gray-700 to-gray-900 text-white flex items-center justify-center shadow-lg overflow-hidden">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                    <i class="fa fa-github text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
+                    <i class="fab fa-github text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/eduardo-nunes-0b541915b" target="_blank"
                      aria-label="Perfil do LinkedIn de Eduardo Nunes"
                      class="no-underline relative group w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-dark text-white flex items-center justify-center shadow-lg overflow-hidden">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                    <i class="fa fa-linkedin text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin text-xl relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
                   </a>
                   <a href="#contato" 
                      class="no-underline relative group flex-1 px-6 rounded-xl bg-gradient-to-r from-primary to-blue-600 text-white flex items-center justify-center shadow-lg overflow-hidden font-semibold hover:shadow-2xl transition-all duration-300">
                     <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     <span class="relative z-10">Entre em Contato</span>
-                    <i class="fa fa-arrow-right ml-2 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                    <i class="fas fa-arrow-right ml-2 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300"></i>
                   </a>
                 </div>
               </div>
@@ -251,7 +251,7 @@
             <button id="experience-tab"
                     @click="activeTab = 'experience'" 
                     :class="activeTab === 'experience' ? 'bg-white/20 text-white' : 'text-white/85 hover:text-white'"
-                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
+                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300 cursor-pointer"
                     role="tab"
                     :aria-selected="String(activeTab === 'experience')"
                     aria-controls="experience-panel">
@@ -260,7 +260,7 @@
             <button id="education-tab"
                     @click="activeTab = 'education'"
                     :class="activeTab === 'education' ? 'bg-white/20 text-white' : 'text-white/85 hover:text-white'"
-                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300"
+                    class="flex-1 px-6 py-4 text-base md:text-lg font-semibold transition-all duration-300 cursor-pointer"
                     role="tab"
                     :aria-selected="String(activeTab === 'education')"
                     aria-controls="education-panel">
@@ -273,21 +273,23 @@
                role="tabpanel"
                aria-labelledby="experience-tab"
                class="p-8 md:p-12">
-            <div class="relative pl-8 border-l-4 border-white/30">
-              <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white"></div>
-              <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
-                <div class="text-white/80 font-semibold mb-2 text-sm md:text-base">FEV - 2022 / Atual</div>
-                <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">DevSquad</h3>
-                <p class="text-white/90 text-base md:text-lg">Engenheiro de Software - TALL Stack (Tailwind, Alpine, Laravel, Livewire)</p>
+            <div class="space-y-8">
+              <div class="relative pl-8 border-l-4 border-white/30">
+                <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white"></div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                  <div class="text-white/80 font-semibold mb-2 text-sm md:text-base">FEV - 2022 / Atual</div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">DevSquad</h3>
+                  <p class="text-white/90 text-base md:text-lg">Engenheiro de Software - TALL Stack (Tailwind, Alpine, Laravel, Livewire)</p>
+                </div>
               </div>
-            </div>
 
-            <div class="relative pl-8 border-l-4 border-white/30">
-              <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white"></div>
-              <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
-                <div class="text-white/80 font-semibold mb-2 text-sm md:text-base">DEZ - 2018 / FEV - 2022</div>
-                <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Afline Mulserviços</h3>
-                <p class="text-white/90 text-base md:text-lg">Desenvolvedor FullStack - Laravel, VueJS, Android</p>
+              <div class="relative pl-8 border-l-4 border-white/30">
+                <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white"></div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                  <div class="text-white/80 font-semibold mb-2 text-sm md:text-base">DEZ - 2018 / FEV - 2022</div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Afline Mulserviços</h3>
+                  <p class="text-white/90 text-base md:text-lg">Desenvolvedor FullStack - Laravel, VueJS, Android</p>
+                </div>
               </div>
             </div>
           </div>
@@ -334,7 +336,7 @@
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-whatsapp text-white text-3xl" aria-hidden="true"></i>
+                <i class="fab fa-whatsapp text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">(92) 9 9537-5239</h3>
             </div>
@@ -345,7 +347,7 @@
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-envelope text-white text-3xl" aria-hidden="true"></i>
+                <i class="fas fa-envelope text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">nunes.eduardo1993@gmail.com</h3>
             </div>
@@ -356,7 +358,7 @@
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-github text-white text-3xl" aria-hidden="true"></i>
+                <i class="fab fa-github text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">Endl13593</h3>
             </div>
@@ -367,7 +369,7 @@
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-linkedin text-white text-3xl" aria-hidden="true"></i>
+                <i class="fab fa-linkedin text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">eduardo-nunes-0b541915b</h3>
             </div>
@@ -378,7 +380,7 @@
              class="no-underline group bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
             <div class="flex flex-col items-center text-center">
               <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i class="fa fa-instagram text-white text-3xl" aria-hidden="true"></i>
+                <i class="fab fa-instagram text-white text-3xl" aria-hidden="true"></i>
               </div>
               <h3 class="text-gray-800 font-semibold text-lg group-hover:text-primary transition-colors">@enunes.lima</h3>
             </div>
@@ -390,19 +392,20 @@
     <button @click.prevent="backToTop" 
             id="btnTop"
             aria-label="Voltar ao topo"
-            class="fixed bottom-8 right-8 w-14 h-14 bg-primary hover:bg-primary-dark text-white rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 z-40 flex items-center justify-center">
-      <i class="fa fa-arrow-circle-up text-2xl"></i>
+            class="cursor-pointer fixed bottom-8 right-8 w-14 h-14 bg-primary hover:bg-primary-dark text-white rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 z-40 flex items-center justify-center">
+      <i class="fas fa-circle-arrow-up text-2xl"></i>
     </button>
   </div>
 </template>
 
 <script>
+import personalImageSrc from '@/assets/img/personal.jpg'
 
 export default {
   name: 'Home',
   data() {
     return {
-      personalImage: require('@/assets/img/personal.jpg'),
+      personalImage: personalImageSrc,
       mobileMenuOpen: false,
       activeTab: 'experience',
       typedRole: '',
@@ -459,10 +462,7 @@ export default {
     }
   },
   mounted() {
-    let vm = this
-    window.onscroll = () => {
-      vm.scroller()
-    }
+    window.addEventListener('scroll', this.scroller)
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', () => {
@@ -473,6 +473,9 @@ export default {
     setTimeout(() => {
       this.typeRole();
     }, 500);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.scroller)
   }
 }
 
