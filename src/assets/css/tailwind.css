@@ -1,10 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-  --color-primary: #2563eb;
-  --color-primary-dark: #1e40af;
-  --color-primary-darker: #1e3a8a;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @keyframes blob {
   0%, 100% {
@@ -78,12 +74,14 @@
   animation: blink 1s step-end infinite;
 }
 
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-  animation-delay: 4s;
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
 }
 
 @layer base {
