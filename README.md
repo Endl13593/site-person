@@ -11,10 +11,10 @@ Site pessoal e portfólio profissional desenvolvido com Vue.js 3, apresentando p
 - **Vue.js 3.5** - Framework JavaScript progressivo
 - **Vue Router 4** - Roteamento SPA
 - **Vue CLI 5** - Ferramentas de build e desenvolvimento  
-- **Tailwind CSS 4** - Framework CSS utility-first
-- **Font Awesome 6** - Ícones
+- **Tailwind CSS 3.4** - Framework CSS utility-first
+- **Font Awesome 7** - Ícones
 - **Prerender SPA Plugin** - SEO e performance
-- **Netlify** - Hospedagem e deploy contínuo
+- **Netlify** - Hospedagem e deploy contínuo (Node.js 18)
 
 ## 📋 Pré-requisitos
 
@@ -71,18 +71,6 @@ site-person/
 
 ```
 
-## 🎨 Personalização
-
-### Tailwind CSS
-O projeto usa Tailwind CSS. Configure em:
-- `tailwind.config.js` - Configuração do Tailwind
-- `postcss.config.js` - PostCSS plugins
-
-Veja instruções detalhadas em: [TAILWIND_SETUP.md](./TAILWIND_SETUP.md)
-
-### Vue Config
-Configurações do Vue CLI em `vue.config.js`
-
 ## 🔍 SEO
 
 O site está otimizado para SEO com:
@@ -92,27 +80,6 @@ O site está otimizado para SEO com:
 - ✅ Robots.txt
 - ✅ Pre-rendering para conteúdo estático
 - ✅ Favicon otimizado para múltiplos dispositivos
-
-### Favicon no Google
-Se o favicon não aparecer corretamente nos resultados do Google, consulte: [FAVICON_GOOGLE_FIX.md](./FAVICON_GOOGLE_FIX.md)
-
-## 🚀 Deploy
-
-O projeto está configurado para deploy automático via Netlify:
-
-1. Push para o repositório
-2. Netlify detecta mudanças e inicia build
-3. Deploy automático após build bem-sucedido
-
-### Deploy manual
-```bash
-npm run build
-# Upload da pasta dist/ para seu servidor
-```
-
-## 📝 Build Notes
-
-Consulte [BUILD.md](./BUILD.md) para informações sobre o processo de build e otimizações.
 
 ## 👤 Autor
 
